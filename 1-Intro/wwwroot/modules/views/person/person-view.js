@@ -44,7 +44,7 @@
             this._headElement.classList.add(`hair-${primaryHair}`);
             secondaryHair && this._headElement.classList.add(`hair-secondary-${secondaryHair}`);
             this._headElement.classList.add(`eye-${eye}`);
-            let [primarySkin, secondarySkin] = skin.split(',').map(el => el.trim().replace('/', ''));
+            let [primarySkin, secondarySkin] = skin.split(',').map(el => el.trim());
             this._headElement.classList.add(`skin-${primarySkin}`);
             secondarySkin && this._headElement.classList.add('skin-multi', `skin-secondary-${secondarySkin}`);
         }
