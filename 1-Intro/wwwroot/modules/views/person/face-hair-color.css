@@ -34,6 +34,14 @@
     .head.hair-none .hair {
         display:none;
     }
+.head.hair-na {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow:none;
+}
+    .head.hair-na .hair {
+        display:none;
+    }
 .head.hair-auburn {
     box-shadow: inset 0 40px 0 0 #A52A2A;
 }
