@@ -12,8 +12,8 @@ const personView = new window.PersonView(
     document.getElementsByClassName('head')[0]
 );
 
-document.getElementById('next').addEventListener('click', ($event) => {
-    personService.loadByIdAsync(personView.currentPersonId + 1)
+const loadPersonData = id => {
+    personService.loadByIdAsync(id)
         .then(person => {
             personView.setPerson(person);
             return person;
@@ -24,19 +24,10 @@ document.getElementById('next').addEventListener('click', ($event) => {
             alert(err.message);
             throw err;
         });
-});
+};
+document.getElementById('next').addEventListener('click', ($event) => 
+    loadPersonData(personView.currentPersonId + 1));
 
-document.getElementById('prev').addEventListener('click', ($event) => {
-    personService.loadByIdAsync(personView.currentPersonId - 1)
-        .then(person => {
-            personView.setPerson(person);
-            return person;
-        })
-        .then(person => filmService.loadTitlesForPerson(person.films))
-        .then(personView.setFilmTitles.bind(personView))
-        .catch(err => {
-            alert(err.message);
-            throw err;
-        });
-});
+document.getElementById('prev').addEventListener('click', ($event) =>
+    loadPersonData(personView.currentPersonId - 1));
 
