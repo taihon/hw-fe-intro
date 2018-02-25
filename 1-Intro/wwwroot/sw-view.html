@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="/modules/loader/loader.css" rel="stylesheet" />
+    <link href="/modules/views/person/person-view.css" rel="stylesheet" />
+    <link href="/modules/views/person/face.css" rel="stylesheet" />
+    <link href="/modules/views/person/face-eyes-color.css" rel="stylesheet" />
+    <link href="/modules/views/person/face-hair-color.css" rel="stylesheet" />
+    <link href="/modules/sw-view/sw-view.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div id="app">
+        <div class="buttons-panel">
+            <button id="prev">&lt;prev</button>
+            <button id="next">next&gt;</button>
+        </div>
+        <div class="loader" hidden="hidden"></div>
+        <div class="head">
+            <div class="hair">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="eye"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="person-info">
+            <span>Nothing to show</span>
+        </div>
+    </div>
+    <!-- Services -->
+    <script src="modules/services/person-service.js"></script>
+
+    <!-- Views -->
+    <script src="modules/views/base-view.js"></script>
+    <script src="modules/views/person/person-view.js"></script>
+
+    <script src="modules/loader/loader.js"></script>
+    <script src="modules/sw-view/sw-view.js"></script>
+</body>
+</html>

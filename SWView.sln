@@ -3,35 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SWView", "SWView\", "{B5BA385D-9AE9-4096-8979-33E99E5DE765}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_50168"
-		Debug.AspNetCompiler.PhysicalPath = "SWView\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50168\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_50168"
-		Release.AspNetCompiler.PhysicalPath = "SWView\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50168\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "50168"
-		SlnRelativePath = "SWView\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Intro", "1-Intro\1-Intro.csproj", "{347B6468-CB5E-4DDD-9FD7-81B77922DBE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B5BA385D-9AE9-4096-8979-33E99E5DE765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5BA385D-9AE9-4096-8979-33E99E5DE765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347B6468-CB5E-4DDD-9FD7-81B77922DBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347B6468-CB5E-4DDD-9FD7-81B77922DBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347B6468-CB5E-4DDD-9FD7-81B77922DBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347B6468-CB5E-4DDD-9FD7-81B77922DBE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
