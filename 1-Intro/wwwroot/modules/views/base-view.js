@@ -9,6 +9,12 @@
             return span;
         }
 
+        _createList(text) {
+            const list = document.createElement('ul');
+            list.textContent = text;
+            return list;
+        }
+
         /**
          * @param {Element} parent
          */

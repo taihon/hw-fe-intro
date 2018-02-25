@@ -30,7 +30,16 @@
             this.currentPersonId = person.id;
             const { hair_color, eye_color, skin_color } = person;
             this._updateHead(hair_color, eye_color, skin_color);
+        }
 
+        setFilmTitles(films) {
+            const ul = this._createList('Film list');
+            films.forEach(film => {
+                const child = document.createElement('li');
+                child.textContent = film.title;
+                ul.appendChild(child);
+            })
+            this._infoPanel.appendChild(ul);
         }
 
         _updateHead(hair, eye, skin) {
