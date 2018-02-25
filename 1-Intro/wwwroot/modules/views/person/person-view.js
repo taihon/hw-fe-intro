@@ -28,22 +28,25 @@
                     this._infoPanel.appendChild(fieldSpan);
                 });
             this.currentPersonId = person.id;
-            const { hair_color, eye_color } = person;
-            this._updateHead(hair_color, eye_color);
+            const { hair_color, eye_color, skin_color } = person;
+            this._updateHead(hair_color, eye_color, skin_color);
 
         }
 
-        _updateHead(hair, eye) {
+        _updateHead(hair, eye, skin) {
             Array.from(this._headElement.classList)
                 .forEach(c => {
-                    if (c.startsWith('hair') || c.startsWith('eye')) {
+                    if (c.startsWith('hair') || c.startsWith('eye') || c.startsWith('skin')) {
                         this._headElement.classList.remove(c);
                     }
                 });
-            let [primary, secondary] = hair.split(',').map(el => el.trim().replace('/', ''));
-            this._headElement.classList.add(`hair-${primary}`);
-            secondary && this._headElement.classList.add(`hair-secondary-${secondary}`);
+            let [primaryHair, secondaryHair] = hair.split(',').map(el => el.trim().replace('/', ''));
+            this._headElement.classList.add(`hair-${primaryHair}`);
+            secondaryHair && this._headElement.classList.add(`hair-secondary-${secondaryHair}`);
             this._headElement.classList.add(`eye-${eye}`);
+            let [primarySkin, secondarySkin] = skin.split(',').map(el => el.trim().replace('/', ''));
+            this._headElement.classList.add(`skin-${primarySkin}`);
+            secondarySkin && this._headElement.classList.add('skin-multi', `skin-secondary-${secondarySkin}`);
         }
     }
 

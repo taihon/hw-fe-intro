@@ -1,0 +1,38 @@
+.head.skin-fair{
+    background:#ffdcb1;
+}
+.head.skin-gold{
+    background:gold;
+}
+.head.skin-white{
+    background:white;
+}
+.head.skin-green{
+    background:green;
+}
+.head.skin-green-tan{
+    background:olive;
+}
+.head.skin-light{
+    background:#ede4c8;
+}
+.head.skin-multi{
+    overflow:hidden;
+}
+.head.skin-multi::before{
+    position:absolute;
+    content:"";
+    height:100%;
+    top:0;
+    right:0;
+    width:50%;
+}
+.head.skin-secondary-blue::before{
+    background: blue;
+}
+.head.skin-secondary-red::before{
+    background: red;
+}
+.head.skin-secondary-brown::before{
+    background: brown;
+}
