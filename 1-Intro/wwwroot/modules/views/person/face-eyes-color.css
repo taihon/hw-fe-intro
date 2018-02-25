@@ -13,6 +13,9 @@
 .head.eye-blue-gray .eye {
     background: #69c;
 }
-.head.eye-blue-black .eye {
+.head.eye-black .eye {
     background: black;
+}
+.head.eye-orange .eye {
+    background: orange;
 }
