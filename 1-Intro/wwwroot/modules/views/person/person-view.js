@@ -33,12 +33,14 @@
         }
 
         setFilmTitles(films) {
-            const ul = this._createList('Film list');
+            let ul = document.getElementsByTagName('ul')[0] || this._createList('Film list');
+            ul.parentElement && ul.parentElement.removeChild(ul);
+            this._cleanChildren(ul);
             films.forEach(film => {
                 const child = document.createElement('li');
                 child.textContent = film.title;
                 ul.appendChild(child);
-            })
+            });
             this._infoPanel.appendChild(ul);
         }
 
