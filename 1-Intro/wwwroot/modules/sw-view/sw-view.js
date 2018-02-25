@@ -18,7 +18,7 @@ const loadPersonData = id => {
             personView.setPerson(person);
             return person;
         })
-        .then(person => filmService.loadTitlesForPerson(person.films))
+        .then(person => filmService.loadFilmTitles(person.films))
         .then(personView.setFilmTitles.bind(personView))
         .catch(err => {
             alert(err.message);

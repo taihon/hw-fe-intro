@@ -33,7 +33,7 @@
          * @param {uri} id
          * @returns {Promise<Object>}
          */
-        loadTitlesForPerson(uriArray) {
+        loadFilmTitles(uriArray) {
             return Promise.all(uriArray.map(uri => this.loadByUriAsync(uri)));
         }
 
