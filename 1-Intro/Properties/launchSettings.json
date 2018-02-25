@@ -18,6 +18,7 @@
     "Intro": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "sw-view.html",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
