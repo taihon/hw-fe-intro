@@ -13,17 +13,16 @@ const personView = new window.PersonView(
 );
 
 document.getElementById('next').addEventListener('click', ($event) => {
-    personService.loadByIdCallback(personView.currentPersonId + 1, (err, person) => {
-        if (err) {
+    personService.loadByIdAsync(personView.currentPersonId + 1)
+        .then(personView.setPerson.bind(personView))
+        .catch(err => {
             alert(err.message);
             throw err;
-        }
-        personView.setPerson(person);
-    });
+        });
 });
 
 document.getElementById('prev').addEventListener('click', ($event) => {
-    personService.loadByIdPromise(personView.currentPersonId - 1)
+    personService.loadByIdAsync(personView.currentPersonId - 1)
         .then(personView.setPerson.bind(personView))
         .catch(err => {
             alert(err.message);

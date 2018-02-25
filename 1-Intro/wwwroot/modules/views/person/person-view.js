@@ -40,7 +40,9 @@
                         this._headElement.classList.remove(c);
                     }
                 });
-            this._headElement.classList.add(`hair-${hair}`);
+            let [primary, secondary] = hair.split(',').map(el => el.trim());
+            this._headElement.classList.add(`hair-${primary}`);
+            secondary && this._headElement.classList.add(`hair-secondary-${secondary}`);
             this._headElement.classList.add(`eye-${eye}`);
         }
     }

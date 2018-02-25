@@ -1,3 +1,18 @@
 ﻿.head.eye-blue .eye {
     background: blue;
 }
+.head.eye-yellow .eye {
+    background: yellow;
+}
+.head.eye-red .eye {
+    background: red;
+}
+.head.eye-brown .eye {
+    background: brown;
+}
+.head.eye-blue-gray .eye {
+    background: #69c;
+}
+.head.eye-blue-black .eye {
+    background: black;
+}

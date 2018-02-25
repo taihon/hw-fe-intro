@@ -4,3 +4,45 @@
     .head.hair-blond .hair {
         border-top-color: #FAF0BE;
     }
+.head.hair-black {
+    box-shadow: inset 0 40px 0 0 black;
+}
+    .head.hair-black .hair {
+        border-top-color: black;
+    }
+.head.hair-brown {
+    box-shadow: inset 0 40px 0 0 brown;
+}
+    .head.hair-brown .hair {
+        border-top-color: brown;
+    }
+.head.hair-grey {
+    box-shadow: inset 0 40px 0 0 grey;
+}
+    .head.hair-grey .hair {
+        border-top-color: grey;
+    }
+.head.hair-white {
+    box-shadow: inset 0 40px 0 0 white;
+}
+    .head.hair-white .hair {
+        border-top-color: white;
+    }
+.head.hair-none {
+    box-shadow:none;
+}
+    .head.hair-none .hair {
+        display:none;
+    }
+.head.hair-auburn {
+    box-shadow: inset 0 40px 0 0 #A52A2A;
+}
+    .head.hair-auburn .hair {
+        border-top-color: #A52A2A;
+    }
+    .head.hair-secondary-grey .hair>div:nth-child(odd) {
+        border-top-color: grey;
+    }
+    .head.hair-secondary-white .hair>div:nth-child(odd) {
+        border-top-color: white;
+    }
